@@ -9,138 +9,147 @@ import Layout from "../layouts/Layout.astro";
 				<img class="py-5 mx-5" style="display: block; max-width: 100%; height: auto;" src="img/Img3.png" />
 			</div>
 
-			<div class="card-body">
-				<h3 id="text" class="card-title">Crie sua conta</h3>
-				<div class="col-12 px-0">
-					<form class="row g-3 needs-validation" name="register-form" id="register-form">
-						<div class="col-12">
-							<label for="inputEmail4" class="form-label">E-mail*</label>
-							<input type="email" class="form-control" id="inputEmail4" placeholder="exemplo@exemplo.com" name="email" required />
-							<div class="invalid-feedback">Informe seu e-mail</div>
-						</div>
-						<div class="col-md-6">
-							<label for="inputPassword4" class="form-label">Senha*</label>
-							<input type="password" class="form-control" id="inputPassword4" minlength="6" placeholder="No mínimo 6 caracteres" name="password" required />
-						</div>
-						<div class="col-md-6">
-							<label for="inputPasswordConf" class="form-label">Digite sua senha novamente*</label>
-							<input type="password" class="form-control" id="inputPasswordConf" minlength="6" data-match="#inputPassword4" placeholder="No mínimo 6 caracteres" required />
-						</div>
-						<div class="col-md-6">
-							<label for="inputName" class="form-label">Nome*</label>
-							<input type="text" class="form-control" id="inputName" pattern="([aA-zZ]+)" placeholder="Exemplo" name="name" required />
-							<div class="invalid-feedback">Informe seu nome</div>
-						</div>
-						<div class="col-md-6">
-							<label for="inputLastName" class="form-label">Sobrenome*</label>
-							<input type="text" class="form-control" id="inputLastName" name="lastname" placeholder="Fonseca" required />
-						</div>
-						<div class="col-md-4">
-							<label for="inputCPF" class="form-label">CPF*</label>
-							<input type="text" class="form-control" id="inputCPF" name="cpf" placeholder="Somente números" maxlength="11" required />
-						</div>
-						<div class="col-md-4">
-							<label for="inputBirthDate" class="form-label">Data de Nascimento*</label>
-							<input type="date" class="form-control" id="inputDate" name="birthdate" required />
-						</div>
-						<div class="col-md-4">
-							<label for="inputPhone" class="form-label">Celular com DDD*</label>
-							<input type="text" class="form-control" id="inputPhone" name="phonenumber" placeholder="Somente Números" maxlength="11" required />
-						</div>
+			<div class="col-md-6 pe-0 me-0">
+				<h3 id="text" class="text-md-center pt-5 pb-2">Crie sua conta</h3>
+				<div id="pageBody" class="container-md px-0 mx-0 rounded" style="background-color: rgb(199, 234, 217);">
+					<div class="col-12 pt-3 pe-3">
+						<h6 class="text-md-end">*Campos Obrigatórios</h6>
+					</div>
 
-						<div class="col-md-8">
-							<label for="inputAddress" class="form-label">Endereço</label>
-							<input type="text" class="form-control" id="inputAddress" name="address" placeholder="Rua Exemplo" />
-						</div>
-						<div class="col-md-4">
-							<label for="inputAddress2" class="form-label">Número</label>
-							<input type="text" class="form-control" id="inputAddress2" name="streetnumber" placeholder="123" />
-						</div>
-						<div class="col-12">
-							<label for="inputAddress3" class="form-label">Complemento</label>
-							<input type="text" class="form-control" id="inputAddress3" name="complement" placeholder="Apartmento, bloco, etc." />
-						</div>
-						<div class="col-md-6">
-							<label for="inputCity" class="form-label">Cidade</label>
-							<input type="text" class="form-control" id="inputCity" name="city" placeholder="Fortaleza" />
-						</div>
-						<div class="col-md-3">
-							<label for="inputState" class="form-label">Estado</label>
-							<select id="inputState" class="form-select" name="state">
-								<option value="">Selecione...</option>
-								<option value="AC">AC</option>
-								<option value="AL">AL</option>
-								<option value="AM">AM</option>
-								<option value="AP">AP</option>
-								<option value="BA">BA</option>
-								<option value="CE">CE</option>
-								<option value="DF">DF</option>
-								<option value="ES">ES</option>
-								<option value="GO">GO</option>
-								<option value="MA">MA</option>
-								<option value="MG">MG</option>
-								<option value="MS">MS</option>
-								<option value="MT">MT</option>
-								<option value="PA">PA</option>
-								<option value="PB">PB</option>
-								<option value="PE">PE</option>
-								<option value="PI">PI</option>
-								<option value="PR">PR</option>
-								<option value="RJ">RJ</option>
-								<option value="RN">RN</option>
-								<option value="RO">RO</option>
-								<option value="RR">RR</option>
-								<option value="RS">RS</option>
-								<option value="SC">SC</option>
-								<option value="SE">SE</option>
-								<option value="SP">SP</option>
-								<option value="TO">TO</option>
-							</select>
-						</div>
-						<div class="col-md-3">
-							<label for="inputZip" class="form-label">CEP</label>
-							<input type="text" class="form-control" id="inputZip" name="cep" placeholder="12345-678" />
-						</div>
-						<div class="col-12">
-							<div class="form-check">
-								<input class="form-check-input" type="checkbox" id="gridCheck" required />
-								<label class="form-check-label" for="gridCheck"> Concordo com todos os Termos e Condições.</label>
-							</div>
-						</div>
+					<div class="card-body">
+						<h3 id="text" class="card-title">Crie sua conta</h3>
+						<div class="col-12 px-0">
+							<form class="row g-3 needs-validation" name="register-form" id="register-form">
+								<div class="col-12">
+									<label for="inputEmail4" class="form-label">E-mail*</label>
+									<input type="email" class="form-control" id="inputEmail4" placeholder="exemplo@exemplo.com" name="email" required />
+									<div class="invalid-feedback">Informe seu e-mail</div>
+								</div>
+								<div class="col-md-6">
+									<label for="inputPassword4" class="form-label">Senha*</label>
+									<input type="password" class="form-control" id="inputPassword4" minlength="6" placeholder="No mínimo 6 caracteres" name="password" required />
+								</div>
+								<div class="col-md-6">
+									<label for="inputPasswordConf" class="form-label">Digite sua senha novamente*</label>
+									<input type="password" class="form-control" id="inputPasswordConf" minlength="6" data-match="#inputPassword4" placeholder="No mínimo 6 caracteres" required />
+								</div>
+								<div class="col-md-6">
+									<label for="inputName" class="form-label">Nome*</label>
+									<input type="text" class="form-control" id="inputName" pattern="([aA-zZ]+)" placeholder="Exemplo" name="name" required />
+									<div class="invalid-feedback">Informe seu nome</div>
+								</div>
+								<div class="col-md-6">
+									<label for="inputLastName" class="form-label">Sobrenome*</label>
+									<input type="text" class="form-control" id="inputLastName" name="lastname" placeholder="Fonseca" required />
+								</div>
+								<div class="col-md-4">
+									<label for="inputCPF" class="form-label">CPF*</label>
+									<input type="text" class="form-control" id="inputCPF" name="cpf" placeholder="Somente números" maxlength="11" required />
+								</div>
+								<div class="col-md-4">
+									<label for="inputBirthDate" class="form-label">Data de Nascimento*</label>
+									<input type="date" class="form-control" id="inputDate" name="birthdate" required />
+								</div>
+								<div class="col-md-4">
+									<label for="inputPhone" class="form-label">Celular com DDD*</label>
+									<input type="text" class="form-control" id="inputPhone" name="phonenumber" placeholder="Somente Números" maxlength="11" required />
+								</div>
 
-						<div class="d-grid gap-2 col-md-2 offset-md-5 mt-1 mb-2">
-							<button id="buttonR" class="btn btn-lg btn-success fw-bold" type="submit">Registrar</button>
+								<div class="col-md-8">
+									<label for="inputAddress" class="form-label">Endereço</label>
+									<input type="text" class="form-control" id="inputAddress" name="address" placeholder="Rua Exemplo" />
+								</div>
+								<div class="col-md-4">
+									<label for="inputAddress2" class="form-label">Número</label>
+									<input type="text" class="form-control" id="inputAddress2" name="streetnumber" placeholder="123" />
+								</div>
+								<div class="col-12">
+									<label for="inputAddress3" class="form-label">Complemento</label>
+									<input type="text" class="form-control" id="inputAddress3" name="complement" placeholder="Apartmento, bloco, etc." />
+								</div>
+								<div class="col-md-6">
+									<label for="inputCity" class="form-label">Cidade</label>
+									<input type="text" class="form-control" id="inputCity" name="city" placeholder="Fortaleza" />
+								</div>
+								<div class="col-md-3">
+									<label for="inputState" class="form-label">Estado</label>
+									<select id="inputState" class="form-select" name="state">
+										<option value="">Selecione...</option>
+										<option value="AC">AC</option>
+										<option value="AL">AL</option>
+										<option value="AM">AM</option>
+										<option value="AP">AP</option>
+										<option value="BA">BA</option>
+										<option value="CE">CE</option>
+										<option value="DF">DF</option>
+										<option value="ES">ES</option>
+										<option value="GO">GO</option>
+										<option value="MA">MA</option>
+										<option value="MG">MG</option>
+										<option value="MS">MS</option>
+										<option value="MT">MT</option>
+										<option value="PA">PA</option>
+										<option value="PB">PB</option>
+										<option value="PE">PE</option>
+										<option value="PI">PI</option>
+										<option value="PR">PR</option>
+										<option value="RJ">RJ</option>
+										<option value="RN">RN</option>
+										<option value="RO">RO</option>
+										<option value="RR">RR</option>
+										<option value="RS">RS</option>
+										<option value="SC">SC</option>
+										<option value="SE">SE</option>
+										<option value="SP">SP</option>
+										<option value="TO">TO</option>
+									</select>
+								</div>
+								<div class="col-md-3">
+									<label for="inputZip" class="form-label">CEP</label>
+									<input type="text" class="form-control" id="inputZip" name="cep" placeholder="12345-678" />
+								</div>
+								<div class="col-12">
+									<div class="form-check">
+										<input class="form-check-input" type="checkbox" id="gridCheck" required />
+										<label class="form-check-label" for="gridCheck"> Concordo com todos os Termos e Condições.</label>
+									</div>
+								</div>
+
+								<div class="d-grid gap-2 col-md-2 offset-md-5 mt-1 mb-2">
+									<button id="buttonR" class="btn btn-lg btn-success fw-bold" type="submit">Registrar</button>
+								</div>
+							</form>
 						</div>
-					</form>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<img class="py-10 my-5" style="display: block; max-width: 100%; height: auto;" src="img/Img4.png" />
 				</div>
 			</div>
-			<div class="col-md-3">
-				<img class="py-10 my-5" style="display: block; max-width: 100%; height: auto;" src="img/Img4.png" />
+		</div>
+		<!---------------------------modal logout------------------->
+		<div class="modal fade" id="logout-modal" aria-hidden="true" aria-labelledby="logout-modal-title" tabindex="-1">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h1 class="modal-title fs-5" id="logout-modal-title">Você foi registrado com sucesso!</h1>
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					</div>
+					<div class="modal-footer">
+						<a href="index.html?logged=false" class="btn btn-danger">Voltar para a tela inicial</a>
+					</div>
+				</div>
 			</div>
 		</div>
+
+		<style is:inline>
+			main {
+				justify-content: space-evenly;
+			}
+			div.card {
+				background-color: rgb(199, 234, 217);
+				max-width: 1200px;
+			}
+		</style>
 	</section>
-
-	<div class="modal fade" id="logout-modal" aria-hidden="true" aria-labelledby="logout-modal-title" tabindex="-1">
-		<div class="modal-dialog">
-			<div class="modal-content">
-				<div class="modal-header">
-					<h1 class="modal-title fs-5" id="logout-modal-title">Você foi registrado com sucesso!</h1>
-					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-				</div>
-				<div class="modal-footer">
-					<a href="index.html?logged=false" class="btn btn-danger">Voltar para a tela inicial</a>
-				</div>
-			</div>
-		</div>
-	</div>
 </Layout>
-
-<style is:inline>
-	main {
-		justify-content: space-evenly;
-	}
-	div.card {
-		background-color: rgb(199, 234, 217);
-		max-width: 1200px;
-	}
-</style>
