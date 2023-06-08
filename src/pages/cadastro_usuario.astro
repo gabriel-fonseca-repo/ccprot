@@ -6,16 +6,11 @@ import Layout from "../layouts/Layout.astro";
 	<section class="register">
 		<div class="card">
 			<div class="col-md-3">
-				<img class="py-5 mx-5" style="display: block; max-width: 100%; height: auto;" src="img/Img3.png" />
+				<img class="py-5 mx-5" style="display: block; max-width: 100%; height: auto;" src="/images/Img3.png" />
 			</div>
 
 			<div class="col-md-6 pe-0 me-0">
-				<h3 id="text" class="text-md-center pt-5 pb-2">Crie sua conta</h3>
 				<div id="pageBody" class="container-md px-0 mx-0 rounded" style="background-color: rgb(199, 234, 217);">
-					<div class="col-12 pt-3 pe-3">
-						<h6 class="text-md-end">*Campos Obrigatórios</h6>
-					</div>
-
 					<div class="card-body">
 						<h3 id="text" class="card-title">Crie sua conta</h3>
 						<div class="col-12 px-0">
@@ -123,7 +118,7 @@ import Layout from "../layouts/Layout.astro";
 					</div>
 				</div>
 				<div class="col-md-3">
-					<img class="py-10 my-5" style="display: block; max-width: 100%; height: auto;" src="img/Img4.png" />
+					<img class="py-10 my-5" style="display: block; max-width: 100%; height: auto;" src="/images/Img4.png" />
 				</div>
 			</div>
 		</div>
@@ -141,15 +136,16 @@ import Layout from "../layouts/Layout.astro";
 				</div>
 			</div>
 		</div>
-
-		<style is:inline>
-			main {
-				justify-content: space-evenly;
-			}
-			div.card {
-				background-color: rgb(199, 234, 217);
-				max-width: 1200px;
-			}
-		</style>
 	</section>
 </Layout>
+
+<style is:inline>
+	main {
+		justify-content: space-evenly;
+		padding: 15px;
+	}
+	div.card {
+		background-color: rgb(199, 234, 217);
+		max-width: 1200px;
+	}
+</style>
