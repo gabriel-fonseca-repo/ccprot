@@ -4,17 +4,21 @@ import Layout from "../layouts/Layout.astro";
 
 <Layout title="Cadastrar-se">
 	<section class="register">
-		<div class="card">
+		<div class="row">
 			<div class="col-md-3">
 				<img class="py-5 mx-5" style="display: block; max-width: 100%; height: auto;" src="/ccprot/images/Img3.png" />
 			</div>
 
 			<div class="col-md-6 pe-0 me-0">
+				<h3 id="text" class="text-md-center pt-5 pb-2">Crie sua conta</h3>
 				<div id="pageBody" class="container-md px-0 mx-0 rounded" style="background-color: rgb(199, 234, 217);">
-					<div class="card-body">
-						<h3 id="text" class="card-title">Crie sua conta</h3>
+
+					<div class="col-12 pt-3 pe-3">
+                        <h6 class="text-md-end">*Campos Obrigatórios</h6>
+                    </div>
+					
 						<div class="col-12 px-0">
-							<form class="row g-3 needs-validation" name="register-form" id="register-form">
+							<form class="row g-3 mx-3 px-3 py-3 my-3  needs-validation" name="register-form" id="register-form">
 								<div class="col-12">
 									<label for="inputEmail4" class="form-label">E-mail*</label>
 									<input type="email" class="form-control" id="inputEmail4" placeholder="exemplo@exemplo.com" name="email" required />
@@ -115,11 +119,12 @@ import Layout from "../layouts/Layout.astro";
 								</div>
 							</form>
 						</div>
-					</div>
+					
 				</div>
-				<div class="col-md-3">
-					<img class="py-10 my-5" style="display: block; max-width: 100%; height: auto;" src="/ccprot/images/Img4.png" />
-				</div>
+				
+			</div>
+			<div class="col-md-3">
+				<img class="py-10 my-5" style="display: block; max-width: 100%; height: auto;" src="/ccprot/images/Img4.png" />
 			</div>
 		</div>
 		<!---------------------------modal logout------------------->
